@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- saved from url=(0129)https://dl-web.dropbox.com/get/My%20Documents/contra%20app/dance.html?w=AACwneYXYmlf7QROu5_kPwMU502k3k4UIwnG7lMRmCuzwg&sjid=19753 -->
+<html ng-app=""><head><meta http-equiv="Content-Type" content="text/html; charset=US-ASCII"><style>
+
+body {
+  font: 16px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.overlay {
+  fill: "black";
+  opacity: .1;
+  pointer-events: all;
+}
+.dot {
+  stroke: #000;
+}
+
+.planediv {
+  width:50%;
+  float:left;
+  height:1200px;
+}
+
+svg {
+width: 100%;
+height: 100%;
+}
+</style>
+
+
+
+  
+    <script src="./dance_files/angular.min.js"></script>
+    <script src="./dance_files/d3.v3.min.js"></script>
+    <script src="./dance_files/dance.js"></script>
+  </head>
+  <body>
+
+<div ng-controller="Dots">
+translation<input ng-model="motion_type" value="translate" type="radio" checked="" name="motion_type">
+rotation/scaling<input ng-model="motion_type" value="rotate_and_scale" type="radio" name="motion_type">
+
+</div>
+
+</body>
